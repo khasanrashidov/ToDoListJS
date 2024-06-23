@@ -12,11 +12,13 @@
     background-color: #d8e1e7;
     height: 100vh;
     font-family: "Onest", sans-serif;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .app {
     margin-top: 50px;
     width: 60%;
+    animation: slideDown 1s ease-in-out;
 }
 
 @media (max-width: 768px) {
@@ -33,6 +35,7 @@
     border-radius: 1.5rem 1.5rem 0 0;
     background-color: #ff5d00;
     font-family: "Onest", sans-serif;
+    animation: bounceIn 1s ease-in-out;
 }
 
 .app form {
@@ -65,18 +68,21 @@
     font-weight: 600;
     height: 42px;
     width: 10%;
+    cursor: pointer;
 }
 
 .app ul {
     list-style: none;
     color: #e0e0e0;
     padding: 0;
+    animation: listFadeIn 1s ease-in-out;
 }
 
 .app ul li {
     padding: 10px;
     background-color: #00478f;
     border-bottom: 1px solid #3a4674;
+    animation: listItemFadeIn 0.5s ease-in-out;
 }
 
 .check {
@@ -91,6 +97,7 @@
 
 .check:checked {
     background-color: #ff5d00;
+    animation: checkAnimation 0.3s ease-in-out;
 }
 
 .task {
@@ -120,4 +127,66 @@
 .completed {
     color: rgba(192, 192, 192, 0.8);
     text-decoration: line-through;
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.1);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes listFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes listItemFadeIn {
+    from {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes checkAnimation {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+    }
 }
