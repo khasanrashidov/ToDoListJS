@@ -21,7 +21,7 @@ function loadTasks() {
         const li = document.createElement("li");
         li.innerHTML = `<input type="checkbox" onclick="taskComplete(this)" class="check" ${task.completed ? "checked" : ""}>
           <input type="text" value="${task.task}" class="task ${task.completed ? "completed" : ""}" onfocus="getCurrentTask(this)" onblur="editTask(this)">
-          <i class="fa fa-trash" onclick="removeTask(this)"></i>`;
+          <i class="fa-solid fa-trash" onclick="removeTask(this)"></i>`;
         list.insertBefore(li, list.children[0]);
     });
 }

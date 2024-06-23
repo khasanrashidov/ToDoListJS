@@ -9,7 +9,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #e1e3ea;
+    background-color: #d8e1e7;
     height: 100vh;
     font-family: "Onest", sans-serif;
 }
@@ -30,8 +30,8 @@
     font-size: 40px;
     padding: 10px 0;
     text-align: center;
-    border-radius: .5rem .5rem 0 0;
-    background-color: #de3f3f;
+    border-radius: 1.5rem 1.5rem 0 0;
+    background-color: #ff5d00;
     font-family: "Onest", sans-serif;
 }
 
@@ -39,21 +39,27 @@
     display: flex;
     width: 100%;
     background-color: #262e4c;
+    justify-content: space-between;
 }
 
-.app form input {
-    border: none;
-    background-color: #3c4979;
-    font-size: 18px;
-    color: white;
-    padding: 10px;
+.app form label {
     width: 90%;
+}
+
+.app form label input {
+    border: none;
+    background-color: #fef7ff;
+    font-size: 18px;
+    color: black;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
 }
 
 .app form button {
     border: none;
     color: white;
-    background-color: #1dd2af;
+    background-color: #37beb0;
     font-size: 25px;
     font-weight: 600;
     height: 42px;
@@ -68,7 +74,7 @@
 
 .app ul li {
     padding: 10px;
-    background-color: #262e4c;
+    background-color: #00478f;
     border-bottom: 1px solid #3a4674;
 }
 
@@ -83,7 +89,7 @@
 }
 
 .check:checked {
-    background-color: #1dd2af;
+    background-color: #ff5d00;
 }
 
 .task {
