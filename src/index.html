@@ -2,11 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>To Do List</title>
-    <link
-            href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
-            rel="stylesheet"
-    />
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>To DO List JS Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet"/>
     <script defer src="scripts.js"></script>
 </head>
@@ -19,11 +18,6 @@
             <button type="submit">&plus;</button>
         </form>
         <ul>
-            <li>
-                <input class="check" onclick="taskComplete(this)" type="checkbox">
-                <input class="task" onblur="editTask(this)" onfocus="getCurrentTask(this)" type="text" value="Exercise">
-                <i class="fa fa-trash" onclick="removeTask(this)"></i>
-            </li>
         </ul>
     </div>
 </div>
