@@ -54,6 +54,7 @@
     padding: 10px;
     width: 100%;
     height: 100%;
+    outline: none;
 }
 
 .app form button {
@@ -108,6 +109,8 @@
 .app ul li i {
     float: right;
     cursor: pointer;
+    font-size: 20px;
+    margin-right: 20px;
 }
 
 .app ul li i:hover {
