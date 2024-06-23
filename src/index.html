@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To Do List</title>
+    <link
+            href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
+            rel="stylesheet"
+    />
+    <link href="index.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="container">
+    <div class="app">
+        <h1>To Do List</h1>
+        <form>
+            <input placeholder="Add a new task..." type="text">
+            <button type="submit">&plus;</button>
+        </form>
+        <ul>
+            <li>
+                <input class="check" onclick="taskComplete(this)" type="checkbox">
+                <input class="task" onblur="editTask(this)" onfocus="getCurrentTask(this)" type="text" value="Exercise">
+                <i class="fa fa-trash" onclick="removeTask(this)"></i>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
