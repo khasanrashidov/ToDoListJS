@@ -86,8 +86,8 @@
 }
 
 .check {
-    width: 0.8em;
-    height: 0.8em;
+    width: 12px;
+    height: 12px;
     cursor: pointer;
     border-radius: 50%;
     background-color: white;
